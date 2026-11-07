@@ -10,12 +10,6 @@ class MavsTrackerDelegate extends WatchUi.BehaviorDelegate {
         _view = view;
     }
 
-    // SELECT / START button: manual vibration test
-    function onSelect() as Boolean {
-        _view.testVibrate();
-        return true;
-    }
-
     // UP / DOWN: manual refresh (useful after polling has stopped)
     function onNextPage() as Boolean {
         _view.refresh();
