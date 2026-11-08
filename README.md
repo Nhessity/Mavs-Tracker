@@ -2,7 +2,6 @@
 
 <!-- PROJECT SHIELDS -->
 [![Issues][issues-shield]][issues-url]
-[![License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT HEADER -->
@@ -53,7 +52,6 @@
     <li><a href="#limitations">Limitations</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -71,7 +69,9 @@
 </div>
 
 
-Mavs Game Alerts is a small portfolio project: a native Garmin Connect IQ app (Monkey C) that watches the Dallas Mavericks game in progress and gives your wrist a buzz whenever a new quarter starts. I started this project because I really wanted to be able to check the status of a live Ddallas Mavericks game and be alerted to return to watching the game during intermissions for when I have to step away from the screen. The project use case is pretty specific to my favorite basketball team and my watch, but I would love to expand it further in the future.
+Mavs Game Alerts is a small portfolio project: a native Garmin Connect IQ app (Monkey C) that watches the Dallas Mavericks game in progress and gives your wrist a buzz whenever a new quarter starts. I started this project because I really wanted to be able to check the status of a live Dallas Mavericks game and be alerted to return to watching the game during intermissions for when I have to step away from the screen. The project use case is pretty specific to my favorite basketball team and my watch, but I would love to expand it further in the future.
+
+**Built with AI assistance:** I developed this app with the help of [Claude](https://claude.ai), an AI assistant from Anthropic. I used it as a collaborator for designing the architecture, writing code, and troubleshooting problems, and I also used the project as a way to learn more about how to develop and debug software with an AI assistant.
 
 What it does:
 
@@ -88,6 +88,7 @@ What it demonstrates:
 * State management and event detection (comparing the current period to the previous one)
 * Hardware features (vibration) and native Connect IQ UI drawing
 * Working around a hardware limitation with a minimal proxy (see [Architecture](#architecture))
+* Using an AI assistant to plan, build, and troubleshoot a real project
 
 > **Disclaimer:** This is an unofficial hobby project. It is not affiliated with or endorsed by the NBA, ESPN, the Dallas Mavericks, or Garmin. It uses ESPN's unofficial, undocumented scoreboard endpoint, which may change or stop working at any time.
 
@@ -103,6 +104,7 @@ What it demonstrates:
 * Visual Studio Code with the Monkey C extension
 * A single Cloudflare Worker (JavaScript) as a tiny proxy
 * ESPN's unofficial NBA scoreboard endpoint as the data source
+* [Claude](https://claude.ai) as an AI development assistant
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -296,6 +298,7 @@ Project Link: [https://github.com/Nhessity/Mavs-Tracker](https://github.com/Nhes
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+* [Claude](https://claude.ai) by Anthropic, used as an AI assistant for development and troubleshooting
 * [Garmin Connect IQ developer documentation](https://developer.garmin.com/connect-iq/overview/)
 * [Cloudflare Workers documentation](https://developers.cloudflare.com/workers/)
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
@@ -306,11 +309,8 @@ Project Link: [https://github.com/Nhessity/Mavs-Tracker](https://github.com/Nhes
 <!-- MARKDOWN LINKS & IMAGES -->
 [issues-shield]: https://img.shields.io/github/issues/Nhessity/Mavs-Tracker.svg?style=for-the-badge
 [issues-url]: https://github.com/Nhessity/Mavs-Tracker/issues
-[license-shield]: https://img.shields.io/github/license/Nhessity/Mavs-Tracker.svg?style=for-the-badge
-[license-url]: https://github.com/Nhessity/Mavs-Tracker/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jimmy-nhes/
-[product-screenshot]: images/screenshot.png
 [garmin-shield]: https://img.shields.io/badge/Garmin_Connect_IQ-007CC3?style=for-the-badge&logo=garmin&logoColor=white
 [garmin-url]: https://developer.garmin.com/connect-iq/overview/
 [cloudflare-shield]: https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white
