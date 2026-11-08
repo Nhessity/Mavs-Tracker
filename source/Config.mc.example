@@ -1,0 +1,9 @@
+// Copy this file to Config.mc (which is git-ignored) and fill in your own values.
+// Config.mc is compiled with the rest of the app; Config.mc.example is not.
+
+// Your deployed Worker URL (keep the trailing slash).
+const WORKER_BASE = "https://<your-worker-name>.<your-subdomain>.workers.dev/";
+
+// Must match the API_KEY secret set on your Worker (npx wrangler secret put API_KEY).
+// Leave as "" if you did not set one.
+const WORKER_KEY = "";

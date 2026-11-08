@@ -7,7 +7,8 @@ import Toybox.Time;
 import Toybox.Timer;
 import Toybox.WatchUi;
 
-const WORKER_BASE = "https://mavs-game-alerts.mavs-game-alerts.workers.dev/";
+// WORKER_BASE and WORKER_KEY live in source/Config.mc (git-ignored).
+// Copy source/Config.mc.example to source/Config.mc and fill them in.
 
 // ---- Test settings ----
 // TEAM_ABBR: "DAL" for real use. Set to another ESPN abbreviation (e.g. "GS") to
@@ -96,6 +97,9 @@ class MavsTrackerView extends WatchUi.View {
             :method => Communications.HTTP_REQUEST_METHOD_GET,
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON
         };
+        if (WORKER_KEY.length() > 0) {
+            options[:headers] = {"x-api-key" => WORKER_KEY};
+        }
         var url = WORKER_BASE + "?team=" + TEAM_ABBR;
         Communications.makeWebRequest(url, null, options, method(:onResponse));
     }

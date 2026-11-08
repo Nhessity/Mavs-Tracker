@@ -1,29 +1,26 @@
-# Connect IQ build output
+# --- Secrets / local config: never commit ---
+source/Config.mc
+*.der
+*.pem
+developer_key*
+.dev.vars
+.env
+
+# --- Connect IQ build output ---
 bin/
 *.prg
 *.prg.debug.xml
 *.iq
-internal-mir/
 gen/
+internal-mir/
 
-# Signing keys: never commit
-*.der
-*.pem
-developer_key*
-
-# Simulator / SDK leftovers
-*.log
-.settings/
-
-# Editor
-.vscode/
-
-# Cloudflare Worker (if the worker folder lives in this repo)
+# --- Cloudflare Worker ---
 node_modules/
 .wrangler/
-.dev.vars
-.env
 
-# OS
+# --- Logs, editor, OS ---
+*.log
+.settings/
+.vscode/
 .DS_Store
 Thumbs.db
